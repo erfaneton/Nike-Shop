@@ -12,19 +12,19 @@ export default function NavBar() {
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="mx-auto gap-4 ">
+                    <Nav className="mx-auto gap-4">
                         <Nav.Link href="Home">
-                            <Link to="/" className="text-decoration-none text-black">
+                            <Link to="/" className="text-decoration-none text-white">
                                 Home
                             </Link>
                         </Nav.Link>
-                        <Nav.Link href="#link">KIDS</Nav.Link>
-                        <Nav.Link href="#link">MENS</Nav.Link>
-                        <Nav.Link href="#link">WOMENS</Nav.Link>
+                        <Nav.Link href="#link" className="text-white">KIDS</Nav.Link>
+                        <Nav.Link href="#link" className="text-white">MENS</Nav.Link>
+                        <Nav.Link href="#link" className="text-white">WOMENS</Nav.Link>
                     </Nav>
                     <div className="d-flex ">
-                        <Button className="bg-light d-flex justify-content-center align-items-center  rounded-circle  p-2 border-0 me-2">
-                            <BiShoppingBag className="text-transparent fs-4 " />
+                        <Button className="bg-light d-flex justify-content-center align-items-center  rounded-circle  p-2 border-0 me-2 text-" >
+                            <BiShoppingBag className=" fs-4 text-transparent" />
                         </Button>
                         <Button className="bg-light  d-flex justify-content-center align-items-center rounded-circle p-2 border-0">
                             <AiOutlineUser className="text-transparent fs-4 " />
