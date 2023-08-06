@@ -15,8 +15,7 @@ export default function NavBar() {
                     <Nav className="mx-auto gap-4 ">
                         <Nav.Link href="Home">
                             <Link to="/" className="text-decoration-none text-black">
-                                {" "}
-                                Home{" "}
+                                Home
                             </Link>
                         </Nav.Link>
                         <Nav.Link href="#link">KIDS</Nav.Link>
