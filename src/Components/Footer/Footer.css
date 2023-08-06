@@ -1,0 +1,36 @@
+.Container {
+    max-width: 1320px;
+    height: 90px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.SocialIcons {
+    display: flex;
+    gap: 1.5rem;
+    color: #fff;
+}
+
+.Watch {
+    display: flex;
+    gap: 0.4rem;
+    color: #fff;
+}
+
+.Number {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.Icons {
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: #fff;
+}
