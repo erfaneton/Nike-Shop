@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { BiShoppingBag } from "react-icons/bi";
 import { AiOutlineUser } from "react-icons/ai";
+
+
 export default function NavBar() {
     return (
         <Navbar expand="lg" className="bg-transparent">
@@ -14,8 +16,8 @@ export default function NavBar() {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mx-auto gap-4">
                         <Nav.Link href="Home">
-                            <Link to="/" className="text-decoration-none text-white">
-                                Home
+                            <Link to='/' className="text-decoration-none text-white">
+                                HOME
                             </Link>
                         </Nav.Link>
                         <Nav.Link href="#link" className="text-white">KIDS</Nav.Link>
