@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { FaStar } from "react-icons/fa"
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
@@ -6,7 +7,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 // import required modules
 import { Pagination } from "swiper/modules";
-import { Row, Col, Container } from "react-bootstrap";
+import { Row, Col, Container, Button } from "react-bootstrap";
 import "./Home.css";
 
 export default function Home() {
@@ -14,8 +15,20 @@ export default function Home() {
     <div className="my-2">
       <Container fluid>
         <Row className="">
-          <Col xs={12} md={6} className="order-2 order-lg-1">
-            <div className=""></div>
+          <Col xs={12} md={6} className="order-2 order-lg-1 h-100" >
+            <div className="d-flex align-items-center h-100">
+              <div className="LeftRow ">
+                <h1 className="TitleLeftRow">JUST DO IT</h1>
+                <div className="RateContainer d-flex align-items-center">
+                  <div className="Star"><FaStar /><FaStar /><FaStar /><FaStar /><FaStar className="text-white" /></div>
+                  <div className="View">(323 reviews)</div>
+                </div>
+                <h5 className="SubTitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</h5>
+                <Button className="border-0 w-25 py-2 fs-5" style={{ backgroundColor: 'var(--green)' }}>
+                  SHOP NOW
+                </Button >
+              </div>
+            </div>
           </Col>
           <Col xs={12} md={6} className="order-1 order-lg-2">
             <div className="">

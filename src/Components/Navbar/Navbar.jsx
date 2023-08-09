@@ -8,7 +8,7 @@ import { AiOutlineUser } from "react-icons/ai";
 export default function NavBar() {
     return (
         <Navbar expand="lg" className="bg-transparent">
-            <Container>
+            <Container fluid>
                 <Navbar.Brand href="#home" className="" style={{ width: "5rem" }}>
                     <Image src="/Img/Nike.png" className="w-100" />
                 </Navbar.Brand>

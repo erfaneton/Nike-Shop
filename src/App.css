@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #232938 !important;
+  background-color: var(--bgColor) !important;
   position: relative;
 }
 
@@ -15,7 +15,7 @@ body::after {
   top: 0;
   bottom: 0;
   right: 0;
-  background-color: #b3e140 !important;
+  background-color: var(--green) !important;
   clip-path: polygon(24% 0, 100% 0, 100% 100%, 60% 100%);
   width: 45rem;
   height: 100vh;
