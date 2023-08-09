@@ -11,6 +11,10 @@
 
 }
 
+.FooterContainer {
+    z-index: 1000;
+}
+
 .SocialIcons {
     display: flex;
     gap: 1.5rem;

@@ -1,12 +1,13 @@
 import "./Footer.css";
 import { BsGithub, BsInstagram, BsTwitter } from "react-icons/bs";
 import { AiOutlinePlayCircle } from "react-icons/ai";
-import {FiYoutube} from 'react-icons/fi'
+import { FiYoutube } from 'react-icons/fi'
 import { Col, Container, Row } from "react-bootstrap";
 import SocialIcon from "../SocialIcon/SocialIcon";
+
 export default function Footer() {
   return (
-    <Container>
+    <Container className="FooterContainer">
       <Row className="align-items-center">
         <Col xs={12} md={4} className="d-flex align-items-center justify-content-start">
           <div className="SocialIcons texxt-center">

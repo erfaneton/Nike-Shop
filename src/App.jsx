@@ -6,7 +6,7 @@ import routes from './routes'
 function App() {
     const router = useRoutes(routes)
     return (
-        <div className='vh-100 bg-success Main'>
+        <div className='vh-100'>
             <Navbar></Navbar>
             {router}
             <Footer></Footer>
