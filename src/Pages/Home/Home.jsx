@@ -32,8 +32,8 @@ export default function Home() {
                 do eiusmod tempor incididunt ut labore et dolore magna aliqua
               </h5>
               <Button
-                  className="border-0 w-25 py-2 fs-5"
-                  style={{ backgroundColor: "var(--green)" }}
+                className="border-0 w-25 py-2 fs-5"
+                style={{ backgroundColor: "var(--green)" }}
               >
                 SHOP NOW
               </Button>
@@ -49,9 +49,13 @@ export default function Home() {
                 modules={[Pagination]}
                 className="mySwiper"
               >
-                <SwiperSlide>Slide 1</SwiperSlide>
-                <SwiperSlide>Slide 2</SwiperSlide>
-                <SwiperSlide>Slide 3</SwiperSlide>
+                <SwiperSlide><img src="public/Img/shoes/men-shoes1.PNG" alt="" /></SwiperSlide>
+                <SwiperSlide><img src="public/Img/shoes/women-shoes1.PNG" alt="" /></SwiperSlide>
+                <SwiperSlide><img src="public/Img/shoes/kid-shoes1.PNG" alt="" /></SwiperSlide>
+                <SwiperSlide><img src="public/Img/shoes/men-shoes2.PNG" alt="" /></SwiperSlide>
+                <SwiperSlide><img src="public/Img/shoes/women-shoes2.PNG" alt="" /></SwiperSlide>
+                <SwiperSlide><img src="public/Img/shoes/kid-shoes2.PNG" alt="" /></SwiperSlide>
+
               </Swiper>
             </div>
           </Col>
