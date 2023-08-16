@@ -1,11 +1,23 @@
 import { Nav, Container, Navbar, Button, Image } from "react-bootstrap";
+import { useState } from "react";
+import shoes from "../../data";
 import { Link } from "react-router-dom";
-import "./Navbar.css";
 import { BiShoppingBag } from "react-icons/bi";
 import { AiOutlineUser } from "react-icons/ai";
+import "./Navbar.css";
+
+const allCategories = [...new Set(shoes.map(shoes => shoes.category))]
+
+
+
 
 
 export default function NavBar() {
+    console.log(allCategories)
+    const [allShoes, setAllShoes] = useState(shoes)
+    const [categories, setCategories] = useState(allCategories)
+
+
     return (
         <Navbar expand="lg" className="bg-transparent">
             <Container fluid>
@@ -19,10 +31,13 @@ export default function NavBar() {
                             <Link to='/' className="text-decoration-none text-white">
                                 HOME
                             </Link>
+
                         </Nav.Link>
-                        <Nav.Link href="#link" className="text-white">KIDS</Nav.Link>
-                        <Nav.Link href="#link" className="text-white">MENS</Nav.Link>
-                        <Nav.Link href="#link" className="text-white">WOMENS</Nav.Link>
+                        {categories.map((category) => (
+
+                            <Nav.Link href="#link" className="text-white">{category}</Nav.Link>
+                        ))}
+
                     </Nav>
                     <div className="d-flex ">
                         <Button className="bg-light d-flex justify-content-center align-items-center  rounded-circle  p-2 border-0 me-2 text-" >
