@@ -1,4 +1,6 @@
 import { FaStar } from "react-icons/fa";
+import { useEffect } from "react";
+import { CategoryContext } from "../../Context/Context";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
@@ -17,6 +19,8 @@ export default function Home() {
           <Col xs={12} md={6} className="order-2 order-lg-1">
             <div className="LeftRow d-flex justify-content-center flex-column align-items-start h-100">
               <h1 className="TitleLeftRow">JUST DO IT</h1>
+              <h4 className="price"></h4>
+              <h3 className="text-white price" >price: 159$ </h3>
               <div className="RateContainer d-flex align-items-center mb-4">
                 <div className="Star">
                   <FaStar />
@@ -49,7 +53,7 @@ export default function Home() {
                 modules={[Pagination]}
                 className="mySwiper"
               >
-                <SwiperSlide><img src="public/Img/shoes/men-shoes1.PNG" alt="" /></SwiperSlide>
+                <SwiperSlide ><img src="public/Img/shoes/men-shoes1.PNG" alt="" /></SwiperSlide>
                 <SwiperSlide><img src="public/Img/shoes/women-shoes1.PNG" alt="" /></SwiperSlide>
                 <SwiperSlide><img src="public/Img/shoes/kid-shoes1.PNG" alt="" /></SwiperSlide>
                 <SwiperSlide><img src="public/Img/shoes/men-shoes2.PNG" alt="" /></SwiperSlide>

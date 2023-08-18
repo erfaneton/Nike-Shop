@@ -11,11 +11,14 @@ const allCategories = [...new Set(shoes.map(shoes => shoes.category))]
 
 
 
-
 export default function NavBar() {
-    console.log(allCategories)
+
     const [allShoes, setAllShoes] = useState(shoes)
     const [categories, setCategories] = useState(allCategories)
+
+    const onClickHandler = (event) => {
+        console.log(event.target.innerHTML);
+    }
 
 
     return (
@@ -35,7 +38,7 @@ export default function NavBar() {
                         </Nav.Link>
                         {categories.map((category) => (
 
-                            <Nav.Link href="#link" className="text-white">{category}</Nav.Link>
+                            <Nav.Link href="#link" className="text-white " onClick={onClickHandler}>{category}</Nav.Link>
                         ))}
 
                     </Nav>

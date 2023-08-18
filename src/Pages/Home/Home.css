@@ -10,6 +10,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+
 }
 
 .swiper-slide img {
@@ -37,6 +39,10 @@
     display: flex;
     gap: 0.5rem;
 
+}
+
+.price {
+    margin-top: -1.2rem;
 }
 
 .Star {
