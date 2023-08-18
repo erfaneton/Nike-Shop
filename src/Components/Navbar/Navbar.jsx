@@ -1,23 +1,26 @@
 import { Nav, Container, Navbar, Button, Image } from "react-bootstrap";
-import { useState } from "react";
-import shoes from "../../data";
-import { Link } from "react-router-dom";
+import {useContext} from "react";
+import {shoes , homePageShoes} from "../../data.jsx";
 import { BiShoppingBag } from "react-icons/bi";
 import { AiOutlineUser } from "react-icons/ai";
 import "./Navbar.css";
+import CategoryContext from "../../Context/shoeContext.jsx";
 
-const allCategories = [...new Set(shoes.map(shoes => shoes.category))]
-
-
-
-
+const allCategories = ['HOME' , ...new Set(shoes.map(shoes => shoes.category))]
 export default function NavBar() {
 
-    const [allShoes, setAllShoes] = useState(shoes)
-    const [categories, setCategories] = useState(allCategories)
+    const shoesDataTransfer = useContext(CategoryContext)
 
     const onClickHandler = (event) => {
         console.log(event.target.innerHTML);
+        if (event.target.innerHTML === 'HOME'){
+            shoesDataTransfer.setShoesData(homePageShoes)
+        }else{
+            let filteredShoes = shoes.filter( item => {
+                return item.category === event.target.innerHTML
+            })
+            shoesDataTransfer.setShoesData(filteredShoes)
+        }
     }
 
 
@@ -30,15 +33,8 @@ export default function NavBar() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mx-auto gap-4">
-                        <Nav.Link href="Home">
-                            <Link to='/' className="text-decoration-none text-white">
-                                HOME
-                            </Link>
-
-                        </Nav.Link>
-                        {categories.map((category) => (
-
-                            <Nav.Link href="#link" className="text-white " onClick={onClickHandler}>{category}</Nav.Link>
+                        {allCategories.map((category , index) => (
+                            <Nav.Link key={index} className="text-white " onClick={onClickHandler}>{category}</Nav.Link>
                         ))}
 
                     </Nav>
