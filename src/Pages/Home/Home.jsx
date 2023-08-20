@@ -16,7 +16,7 @@ export default function Home() {
 
   useEffect(() => {
     setPrice(shoesDataTransfer.shoesData[currentSlide].price);
-    setView(shoesDataTransfer.shoesData[currentSlide].View);
+    setView(shoesDataTransfer.shoesData[currentSlide].view);
   }, [currentSlide, shoesDataTransfer.shoesData]);
 
   return (
