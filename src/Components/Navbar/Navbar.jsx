@@ -1,22 +1,22 @@
 import { Nav, Container, Navbar, Button, Image } from "react-bootstrap";
-import {useContext} from "react";
-import {shoes , homePageShoes} from "../../data.jsx";
+import { useContext } from "react";
+import { shoes, homePageShoes } from "../../data.jsx";
 import { BiShoppingBag } from "react-icons/bi";
 import { AiOutlineUser } from "react-icons/ai";
 import "./Navbar.css";
 import CategoryContext from "../../Context/shoeContext.jsx";
 
-const allCategories = ['HOME' , ...new Set(shoes.map(shoes => shoes.category))]
+const allCategories = ['HOME', ...new Set(shoes.map(shoes => shoes.category))]
 export default function NavBar() {
 
     const shoesDataTransfer = useContext(CategoryContext)
 
     const onClickHandler = (event) => {
         console.log(event.target.innerHTML);
-        if (event.target.innerHTML === 'HOME'){
+        if (event.target.innerHTML === 'HOME') {
             shoesDataTransfer.setShoesData(homePageShoes)
-        }else{
-            let filteredShoes = shoes.filter( item => {
+        } else {
+            let filteredShoes = shoes.filter(item => {
                 return item.category === event.target.innerHTML
             })
             shoesDataTransfer.setShoesData(filteredShoes)
@@ -33,7 +33,7 @@ export default function NavBar() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mx-auto gap-4">
-                        {allCategories.map((category , index) => (
+                        {allCategories.map((category, index) => (
                             <Nav.Link key={index} className="text-white " onClick={onClickHandler}>{category}</Nav.Link>
                         ))}
 
