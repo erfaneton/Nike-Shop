@@ -9,14 +9,15 @@ import { homePageShoes } from "./data.jsx";
 function App() {
     const router = useRoutes(routes)
     const [shoesData, setShoesData] = useState(homePageShoes)
-    const [curentShoes, setCurentShoes] = useState()
+    const [activeShoe, setActiveShoe] = useState(null)
+
     return (
         <>
             <CategoryContext.Provider value={{
                 shoesData,
                 setShoesData,
-                curentShoes,
-                setCurentShoes
+                activeShoe,
+                setActiveShoe
             }}>
                 <div className='vh-100 px-5'>
                     <Navbar />

@@ -4,7 +4,10 @@ import { AiOutlinePlayCircle } from "react-icons/ai";
 import { FiYoutube } from 'react-icons/fi'
 import { Col, Container, Row } from "react-bootstrap";
 import SocialIcon from "../SocialIcon/SocialIcon";
+import CategoryContext from "../../Context/shoeContext";
+import { useContext } from "react";
 export default function Footer() {
+  const shoesDataTransfer = useContext(CategoryContext);
   return (
     <Container fluid>
       <Row className="align-items-center">
@@ -32,8 +35,8 @@ export default function Footer() {
         </Col>
         <Col xs={12} md={4} className="d-flex justify-content-end align-items-center">
           <div className="Number">
-            <h3>01</h3>
-            <span>/03</span>
+            <h3>0{shoesDataTransfer.activeShoe + 1}</h3>
+            <span>/0{shoesDataTransfer.shoesData.length}</span>
           </div>
         </Col>
       </Row>

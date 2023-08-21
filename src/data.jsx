@@ -3,7 +3,7 @@ export const shoes = [
         id: 1,
         category: 'MEN',
         img: 'public/Img/shoes/men-shoes1.PNG',
-        rate: '<FaStar/><FaStar/><FaStar />< FaStar />< FaStar className="text-white" />',
+        rate: 4,
         view: '3622',
         price: '299'
     },
@@ -11,7 +11,7 @@ export const shoes = [
         id: 2,
         category: 'MEN',
         img: 'public/Img/shoes/men-shoes2.PNG',
-        rate: '<FaStar/><FaStar/><FaStar />< FaStar />< FaStar/>',
+        rate: 5,
         view: '3110',
         price: '269'
     },
@@ -19,7 +19,7 @@ export const shoes = [
         id: 3,
         category: 'MEN',
         img: 'public/Img/shoes/men-shoes3.PNG',
-        rate: '<FaStar/><FaStar/><FaStar />< FaStar className="text-white" />< FaStar className="text-white" />',
+        rate: 3,
         view: '3278',
         price: '299'
     },
@@ -27,7 +27,7 @@ export const shoes = [
         id: 4,
         category: 'MEN',
         img: 'public/Img/shoes/men-shoes4.PNG',
-        rate: '<FaStar/><FaStar/><FaStar />< FaStar />< FaStar />',
+        rate: 5,
         view: '3450',
         price: '179'
 
@@ -36,7 +36,7 @@ export const shoes = [
         id: 5,
         category: 'MEN',
         img: 'public/Img/shoes/men-shoes5.PNG',
-        rate: '<FaStar/><FaStar/><FaStar className="text-white" />< FaStar className="text-white" />< FaStar className="text-white" />',
+        rate: 2,
         view: '2856',
         price: '199'
     },
@@ -44,7 +44,7 @@ export const shoes = [
         id: 6,
         category: 'WOMEN',
         img: 'public/Img/shoes/women-shoes1.PNG',
-        rate: '<FaStar/><FaStar/><FaStar />< FaStar/>< FaStar/>',
+        rate: 5,
         view: '3555',
         price: '259'
     },
@@ -52,7 +52,7 @@ export const shoes = [
         id: 7,
         category: 'WOMEN',
         img: 'public/Img/shoes/women-shoes2.PNG',
-        rate: '<FaStar/><FaStar/><FaStar />< FaStar />< FaStar className="text-white" />',
+        rate: 4,
         view: '3458',
         price: '160'
     },
@@ -60,7 +60,7 @@ export const shoes = [
         id: 8,
         category: 'WOMEN',
         img: 'public/Img/shoes/women-shoes3.PNG',
-        rate: '<FaStar/><FaStar/><FaStar className="text-white" />< FaStar className="text-white" />< FaStar className="text-white" />',
+        rate: 2,
         view: '3221',
         price: '159'
     },
@@ -68,7 +68,7 @@ export const shoes = [
         id: 9,
         category: 'WOMEN',
         img: 'public/Img/shoes/women-shoes4.PNG',
-        rate: '<FaStar/><FaStar/><FaStar />< FaStar />< FaStar/>',
+        rate: 5,
         view: '2770',
         price: '199'
     },
@@ -76,7 +76,7 @@ export const shoes = [
         id: 10,
         category: 'WOMEN',
         img: 'public/Img/shoes/women-shoes5.PNG',
-        rate: '<FaStar/><FaStar/><FaStar />< FaStar className="text-white" />< FaStar className="text-white" />',
+        rate: 3,
         view: '3430',
         price: '119'
 
@@ -85,7 +85,7 @@ export const shoes = [
         id: 11,
         category: 'KIDS',
         img: 'public/Img/shoes/kid-shoes1.PNG',
-        rate: '<FaStar/><FaStar/><FaStar />< FaStar className="text-white" />< FaStar className="text-white" />',
+        rate: 3,
         view: '3203',
         price: '99'
     },
@@ -93,7 +93,7 @@ export const shoes = [
         id: 12,
         category: 'KIDS',
         img: 'public/Img/shoes/kid-shoes2.PNG',
-        rate: '<FaStar/><FaStar/><FaStar />< FaStar className="text-white" />< FaStar className="text-white" />',
+        rate: 3,
         view: '2078',
         price: '89'
     },
@@ -101,7 +101,7 @@ export const shoes = [
         id: 13,
         category: 'KIDS',
         img: 'public/Img/shoes/kid-shoes3.PNG',
-        rate: '<FaStar/><FaStar/><FaStar />< FaStar />< FaStar className="text-white" />',
+        rate: 4,
         view: '1923',
         price: '129'
     },
@@ -109,7 +109,7 @@ export const shoes = [
         id: 14,
         category: 'KIDS',
         img: 'public/Img/shoes/kid-shoes4.PNG',
-        rate: '<FaStar/><FaStar/><FaStar />< FaStar />< FaStar/>',
+        rate: 5,
         view: '2033',
         price: '59'
     },
@@ -117,7 +117,7 @@ export const shoes = [
         id: 15,
         category: 'KIDS',
         img: 'public/Img/shoes/kid-shoes5.PNG',
-        rate: '<FaStar/><FaStar/><FaStar />< FaStar className="text-white" />< FaStar className="text-white" />',
+        rate: 3,
         view: '1777',
         price: '39'
     },
@@ -127,7 +127,7 @@ export const homePageShoes = [
         id: 1,
         category: 'MEN',
         img: 'public/Img/shoes/men-shoes1.PNG',
-        rate: '<FaStar/><FaStar/><FaStar />< FaStar />< FaStar className="text-white" />',
+        rate: 4,
         view: '3622',
         price: '299'
     },
@@ -135,7 +135,7 @@ export const homePageShoes = [
         id: 2,
         category: 'WOMEN',
         img: 'public/Img/shoes/women-shoes1.PNG',
-        rate: '<FaStar/><FaStar/><FaStar />< FaStar/>< FaStar/>',
+        rate: 5,
         view: '3555',
         price: '259'
     },
@@ -143,27 +143,9 @@ export const homePageShoes = [
         id: 3,
         category: 'KIDS',
         img: 'public/Img/shoes/kid-shoes1.PNG',
-        rate: '<FaStar/><FaStar/><FaStar />< FaStar className="text-white" />< FaStar className="text-white" />',
+        rate: 3,
         view: '3203',
         price: '99'
-    },
-    {
-        id: 4,
-        category: 'WOMEN',
-        img: 'public/Img/shoes/women-shoes5.PNG',
-        rate: '<FaStar/><FaStar/><FaStar />< FaStar className="text-white" />< FaStar className="text-white" />',
-        view: '3430',
-        price: '119'
-
-    },
-    {
-        id: 5,
-        category: 'MEN',
-        img: 'public/Img/shoes/men-shoes4.PNG',
-        rate: '<FaStar/><FaStar/><FaStar />< FaStar />< FaStar />',
-        view: '3450',
-        price: '179'
-
-    },
+    }
 ]
 
