@@ -12,7 +12,6 @@ export default function NavBar() {
     const shoesDataTransfer = useContext(CategoryContext)
 
     const onClickHandler = (event) => {
-        console.log(event.target.innerHTML);
         if (event.target.innerHTML === 'HOME'){
             shoesDataTransfer.setShoesData(homePageShoes)
         }else{
