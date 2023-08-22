@@ -43,7 +43,7 @@ export const shoes = [
         rate: 2,
         view: '2856',
         price: '199',
-        color: '#333333'
+        color: '#dbe6a0'
     },
     {
         id: 6,
@@ -70,7 +70,7 @@ export const shoes = [
         rate: 2,
         view: '3221',
         price: '159',
-        color: '#b4ffb4'
+        color: '#d2b32e'
     },
     {
         id: 9,
@@ -88,7 +88,7 @@ export const shoes = [
         rate: 3,
         view: '3430',
         price: '119',
-        color: '#121a40'
+        color: '#39437e'
 
     },
     {
@@ -107,34 +107,34 @@ export const shoes = [
         rate: 3,
         view: '2078',
         price: '89',
-        color: '#a0a09d'
+        color: '#21c1dd'
     },
     {
         id: 13,
-        category: 'KIDS',
-        img: 'public/Img/shoes/kid-shoes3.PNG',
-        rate: 4,
-        view: '1923',
-        price: '129',
-        color: '#262324'
-    },
-    {
-        id: 14,
         category: 'KIDS',
         img: 'public/Img/shoes/kid-shoes4.PNG',
         rate: 5,
         view: '2033',
         price: '59',
-        color: '#a9aaa7'
+        color: '#bf1839'
     },
     {
-        id: 15,
+        id: 14,
         category: 'KIDS',
         img: 'public/Img/shoes/kid-shoes5.PNG',
         rate: 3,
         view: '1777',
         price: '39',
-        color: '#555a5d'
+        color: '#0565ab'
+    },
+    {
+        id: 15,
+        category: 'KIDS',
+        img: 'public/Img/shoes/kid-shoes3.PNG',
+        rate: 4,
+        view: '1923',
+        price: '129',
+        color: '#c0bcb2'
     },
     {
         id: 16,
@@ -163,7 +163,7 @@ export const homePageShoes = [
         rate: 5,
         view: '3555',
         price: '259',
-        color: '#b2b5b7'
+        color: '#fff5'
     },
     {
         id: 3,

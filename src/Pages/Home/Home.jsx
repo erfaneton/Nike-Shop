@@ -1,4 +1,3 @@
-import { FaStar } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -8,6 +7,7 @@ import "./Home.css";
 import { useContext, useState, useEffect } from "react";
 import CategoryContext from "../../Context/shoeContext.jsx";
 import Rating from '@mui/material/Rating';
+import StarIcon from '@mui/icons-material/Star';
 
 export default function Home() {
   const shoesDataTransfer = useContext(CategoryContext);
@@ -26,13 +26,13 @@ export default function Home() {
         <Row className="">
           <Col xs={12} md={6} className="order-2 order-lg-1">
             <div className="LeftRow d-flex justify-content-center flex-column align-items-start h-100">
-              <h1 className="TitleLeftRow">JUST DO IT</h1>
-              <h3 className="text-white price">price: {currentItem.price}$ </h3>
+              <h1 className="TitleLeftRow" style={{color: currentItem.color}}>JUST DO IT</h1>
+              <h3 className="text-white price">Price: {currentItem.price}$ </h3>
               <div className="RateContainer d-flex align-items-center mb-4">
                 <div className="Star">
                   {
                     currentItem.rate && (
-                      <Rating name="read-only" value={currentItem.rate} readOnly />
+                      <Rating value={currentItem.rate} readOnly emptyIcon={<StarIcon style={{ opacity: '0.9' , fill: "#fff8" }} />}/>
                     )
                   }
                 </div>
@@ -44,7 +44,7 @@ export default function Home() {
               </h5>
               <Button
                 className="border-0 w-25 py-2 fs-5"
-                style={{ backgroundColor: "var(--green)" }}
+                style={{ backgroundColor: currentItem.color }}
               >
                 SHOP NOW
               </Button>
