@@ -19,7 +19,7 @@ function App() {
                 activeShoe,
                 setActiveShoe
             }}>
-                <div className='vh-100 px-5'>
+                <div className='vh-100 px-5 '>
                     <Navbar />
                     {router}
                     <Footer />

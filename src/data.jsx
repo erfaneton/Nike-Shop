@@ -2,18 +2,20 @@ export const shoes = [
     {
         id: 1,
         category: 'MEN',
-        img: 'public/Img/shoes/men-shoes1.PNG',
-        rate: 4,
+        img: 'public/Img/shoes/men-shoes2.PNG',
+        rate: 5,
         view: '3622',
-        price: '299'
+        price: '299',
+        color: '#11356f'
     },
     {
         id: 2,
         category: 'MEN',
-        img: 'public/Img/shoes/men-shoes2.PNG',
-        rate: 5,
+        img: 'public/Img/shoes/men-shoes1.PNG',
+        rate: 4,
         view: '3110',
-        price: '269'
+        price: '269',
+        color: '#a4dd17'
     },
     {
         id: 3,
@@ -21,7 +23,8 @@ export const shoes = [
         img: 'public/Img/shoes/men-shoes3.PNG',
         rate: 3,
         view: '3278',
-        price: '299'
+        price: '299',
+        color: '#ad4720'
     },
     {
         id: 4,
@@ -29,7 +32,8 @@ export const shoes = [
         img: 'public/Img/shoes/men-shoes4.PNG',
         rate: 5,
         view: '3450',
-        price: '179'
+        price: '179',
+        color: '#c85718'
 
     },
     {
@@ -38,7 +42,8 @@ export const shoes = [
         img: 'public/Img/shoes/men-shoes5.PNG',
         rate: 2,
         view: '2856',
-        price: '199'
+        price: '199',
+        color: '#333333'
     },
     {
         id: 6,
@@ -46,7 +51,8 @@ export const shoes = [
         img: 'public/Img/shoes/women-shoes1.PNG',
         rate: 5,
         view: '3555',
-        price: '259'
+        price: '259',
+        color: '#b2b5b7'
     },
     {
         id: 7,
@@ -54,7 +60,8 @@ export const shoes = [
         img: 'public/Img/shoes/women-shoes2.PNG',
         rate: 4,
         view: '3458',
-        price: '160'
+        price: '160',
+        color: '#565883'
     },
     {
         id: 8,
@@ -62,7 +69,8 @@ export const shoes = [
         img: 'public/Img/shoes/women-shoes3.PNG',
         rate: 2,
         view: '3221',
-        price: '159'
+        price: '159',
+        color: '#b4ffb4'
     },
     {
         id: 9,
@@ -70,7 +78,8 @@ export const shoes = [
         img: 'public/Img/shoes/women-shoes4.PNG',
         rate: 5,
         view: '2770',
-        price: '199'
+        price: '199',
+        color: '#9d0812'
     },
     {
         id: 10,
@@ -78,7 +87,8 @@ export const shoes = [
         img: 'public/Img/shoes/women-shoes5.PNG',
         rate: 3,
         view: '3430',
-        price: '119'
+        price: '119',
+        color: '#121a40'
 
     },
     {
@@ -87,7 +97,8 @@ export const shoes = [
         img: 'public/Img/shoes/kid-shoes1.PNG',
         rate: 3,
         view: '3203',
-        price: '99'
+        price: '99',
+        color: '#bdc1c4'
     },
     {
         id: 12,
@@ -95,7 +106,8 @@ export const shoes = [
         img: 'public/Img/shoes/kid-shoes2.PNG',
         rate: 3,
         view: '2078',
-        price: '89'
+        price: '89',
+        color: '#a0a09d'
     },
     {
         id: 13,
@@ -103,7 +115,8 @@ export const shoes = [
         img: 'public/Img/shoes/kid-shoes3.PNG',
         rate: 4,
         view: '1923',
-        price: '129'
+        price: '129',
+        color: '#262324'
     },
     {
         id: 14,
@@ -111,7 +124,8 @@ export const shoes = [
         img: 'public/Img/shoes/kid-shoes4.PNG',
         rate: 5,
         view: '2033',
-        price: '59'
+        price: '59',
+        color: '#a9aaa7'
     },
     {
         id: 15,
@@ -119,7 +133,17 @@ export const shoes = [
         img: 'public/Img/shoes/kid-shoes5.PNG',
         rate: 3,
         view: '1777',
-        price: '39'
+        price: '39',
+        color: '#555a5d'
+    },
+    {
+        id: 16,
+        category: 'WOMEN',
+        img: 'public/Img/shoes/women-shoes6.PNG',
+        rate: 3,
+        view: '2950',
+        price: '169',
+        color: '#48494d'
     },
 ]
 export const homePageShoes = [
@@ -129,7 +153,8 @@ export const homePageShoes = [
         img: 'public/Img/shoes/men-shoes1.PNG',
         rate: 4,
         view: '3622',
-        price: '299'
+        price: '299',
+        color: '#a4dd17'
     },
     {
         id: 2,
@@ -137,7 +162,8 @@ export const homePageShoes = [
         img: 'public/Img/shoes/women-shoes1.PNG',
         rate: 5,
         view: '3555',
-        price: '259'
+        price: '259',
+        color: '#b2b5b7'
     },
     {
         id: 3,
@@ -145,7 +171,8 @@ export const homePageShoes = [
         img: 'public/Img/shoes/kid-shoes1.PNG',
         rate: 3,
         view: '3203',
-        price: '99'
+        price: '99',
+        color: '#bdc1c4'
     }
 ]
 

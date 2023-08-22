@@ -58,3 +58,18 @@
 .SubTitle {
     color: #585c64;
 }
+
+.swiper-pagination-bullet-active {
+    transform: scale(1.35);
+}
+
+.swiper-pagination-bullet {
+    background-color: #fff;
+    height: 0.7rem;
+    width: 0.7rem;
+}
+
+.swiper-pagination {
+    display: flex;
+    flex-direction: column;
+}
