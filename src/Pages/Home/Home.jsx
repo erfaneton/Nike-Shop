@@ -2,17 +2,19 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
-import { Row, Col, Container, Button } from "react-bootstrap";
+import { Row, Col, Container, Button, Toast, ToastContainer } from "react-bootstrap";
 import "./Home.css";
 import { useContext, useState, useEffect } from "react";
 import CategoryContext from "../../Context/shoeContext.jsx";
 import Rating from '@mui/material/Rating';
 import StarIcon from '@mui/icons-material/Star';
 
+
 export default function Home() {
   const shoesDataTransfer = useContext(CategoryContext);
   const [currentItem, setCurrentItem] = useState({})
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [showToast, setShowToast] = useState(false)
 
 
   useEffect(() => {
@@ -26,13 +28,13 @@ export default function Home() {
         <Row className="">
           <Col xs={12} md={6} className="order-2 order-lg-1">
             <div className="LeftRow d-flex justify-content-center flex-column align-items-start h-100">
-              <h1 className="TitleLeftRow" style={{color: currentItem.color}}>JUST DO IT</h1>
+              <h1 className="TitleLeftRow" style={{ color: currentItem.color }}>JUST DO IT</h1>
               <h3 className="text-white price">Price: {currentItem.price}$ </h3>
               <div className="RateContainer d-flex align-items-center mb-4">
                 <div className="Star">
                   {
                     currentItem.rate && (
-                      <Rating value={currentItem.rate} readOnly emptyIcon={<StarIcon style={{ opacity: '0.9' , fill: "#fff8" }} />}/>
+                      <Rating value={currentItem.rate} readOnly emptyIcon={<StarIcon style={{ opacity: '0.9', fill: "#fff8" }} />} />
                     )
                   }
                 </div>
@@ -45,9 +47,21 @@ export default function Home() {
               <Button
                 className="border-0 w-25 py-2 fs-5"
                 style={{ backgroundColor: currentItem.color }}
+                onClick={() => setShowToast(true)}
               >
                 SHOP NOW
               </Button>
+              <Row>
+                <Col xs={6} >
+                  <ToastContainer position="bottom-end" className="p-5" >
+                    <Toast bg='success' onClose={() => setShowToast(false)} show={showToast} delay={2000} autohide>
+                      <Toast.Header>
+                        <Toast.Body >Shoes have been added to the cart</Toast.Body>
+                      </Toast.Header>
+                    </Toast>
+                  </ToastContainer>
+                </Col>
+              </Row>
             </div>
           </Col>
           <Col xs={12} md={6} className="order-1 order-lg-2">
