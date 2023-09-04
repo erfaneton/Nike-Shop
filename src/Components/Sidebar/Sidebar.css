@@ -1,0 +1,73 @@
+.container-img {
+    background-color: black;
+    border-radius: 50%;
+    transition: 0.3s;
+    height: 3rem;
+    width: 3rem;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x);
+    ;
+    height: 8rem;
+}
+
+
+
+.title-head {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+
+}
+
+
+.email-h6 {
+    color: gray;
+}
+
+.user-img {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    opacity: 1;
+}
+
+.user-img:hover {
+    opacity: 0.75;
+}
+
+.offcanvas-body {
+    position: absolute;
+    top: 7rem;
+}
+
+.sidebar-item {
+    width: 16rem;
+    height: 3rem;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    margin-top: 0.8rem;
+    transition: 0.3s;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.sidebar-icon {
+    margin-left: 1rem;
+    transform: scale(1.2);
+}
+
+.name-sidebar-item {
+    width: 6rem;
+}
+
+.sidebar-item:hover {
+    background-color: aqua;
+}

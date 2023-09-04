@@ -33,8 +33,12 @@
     color: #fff;
 }
 
+.shoes-video {
+    text-decoration: none;
+    color: #fff;
+}
+
 .Icons {
     font-size: 1.4rem;
-    cursor: pointer;
     color: #fff;
 }

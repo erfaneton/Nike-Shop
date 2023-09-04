@@ -8,9 +8,10 @@ import { useContext, useState, useEffect } from "react";
 import CategoryContext from "../../Context/shoeContext.jsx";
 import Rating from '@mui/material/Rating';
 import StarIcon from '@mui/icons-material/Star';
-
+import Shopping from "../../Components/Shop/Shopping";
 
 export default function Home() {
+
   const shoesDataTransfer = useContext(CategoryContext);
   const [currentItem, setCurrentItem] = useState({})
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -24,6 +25,7 @@ export default function Home() {
 
   return (
     <div className="my-2">
+      <Shopping></Shopping>
       <Container fluid>
         <Row className="">
           <Col xs={12} md={6} className="order-2 order-lg-1">
@@ -51,17 +53,13 @@ export default function Home() {
               >
                 SHOP NOW
               </Button>
-              <Row>
-                <Col xs={6} >
-                  <ToastContainer position="bottom-end" className="p-5" >
-                    <Toast bg='success' onClose={() => setShowToast(false)} show={showToast} delay={2000} autohide>
-                      <Toast.Header>
-                        <Toast.Body >Shoes have been added to the cart</Toast.Body>
-                      </Toast.Header>
-                    </Toast>
-                  </ToastContainer>
-                </Col>
-              </Row>
+              <ToastContainer position="bottom-end" className="p-5" >
+                <Toast bg='success' onClose={() => setShowToast(false)} show={showToast} delay={2000} autohide>
+                  <Toast.Header>
+                    <Toast.Body >Shoes have been added to the cart</Toast.Body>
+                  </Toast.Header>
+                </Toast>
+              </ToastContainer>
             </div>
           </Col>
           <Col xs={12} md={6} className="order-1 order-lg-2">

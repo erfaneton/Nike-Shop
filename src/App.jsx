@@ -11,14 +11,18 @@ function App() {
     const router = useRoutes(routes)
     const [shoesData, setShoesData] = useState(homePageShoes)
     const [activeShoe, setActiveShoe] = useState(1)
+    const [show, setShow] = useState(false);
+
     return (
         <div className='myBody'>
-            <div className="colorable" style={{backgroundColor: shoesData[activeShoe].color}} ></div>
+            <div className="colorable" style={{ backgroundColor: shoesData[activeShoe].color }} ></div>
             <CategoryContext.Provider value={{
                 shoesData,
                 setShoesData,
                 activeShoe,
-                setActiveShoe
+                setActiveShoe,
+                show,
+                setShow
             }}>
                 <div className='vh-100 px-5 '>
                     <Navbar />

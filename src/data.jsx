@@ -3,9 +3,9 @@ export const shoes = [
         id: 1,
         category: 'MEN',
         img: 'public/Img/shoes/men-shoes2.PNG',
-        rate: 5,
-        view: '3622',
-        price: '299',
+        rate: 4,
+        view: '3110',
+        price: '269',
         color: '#11356f'
     },
     {
@@ -13,8 +13,8 @@ export const shoes = [
         category: 'MEN',
         img: 'public/Img/shoes/men-shoes1.PNG',
         rate: 4,
-        view: '3110',
-        price: '269',
+        view: '3622',
+        price: '299',
         color: '#a4dd17'
     },
     {

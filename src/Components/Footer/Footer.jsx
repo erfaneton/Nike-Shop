@@ -1,7 +1,6 @@
 import "./Footer.css";
-import { BsGithub, BsInstagram, BsTwitter } from "react-icons/bs";
+import { BsGithub, BsInstagram, BsTwitter, BsTelegram } from "react-icons/bs";
 import { AiOutlinePlayCircle } from "react-icons/ai";
-import { FiYoutube } from 'react-icons/fi'
 import { Col, Container, Row } from "react-bootstrap";
 import SocialIcon from "../SocialIcon/SocialIcon";
 import CategoryContext from "../../Context/shoeContext";
@@ -13,7 +12,7 @@ export default function Footer() {
       <Row className="align-items-center">
         <Col xs={12} md={4} className="d-flex align-items-center justify-content-start">
           <div className="SocialIcons texxt-center">
-            <SocialIcon link="#">
+            <SocialIcon link="https://github.com/erfaneton">
               <BsGithub className="text-light fs-4" />
             </SocialIcon>
             <SocialIcon link="#">
@@ -22,15 +21,17 @@ export default function Footer() {
             <SocialIcon link="#">
               <BsTwitter className="text-light fs-4" />
             </SocialIcon>
-            <SocialIcon link="#">
-              <FiYoutube className="text-light fs-4" />
+            <SocialIcon link="https://t.me/erfaneton">
+              <BsTelegram className="text-light fs-4" />
             </SocialIcon>
           </div>
         </Col>
         <Col xs={12} md={4} className="d-flex justify-content-center align-items-center">
           <div className="Watch">
-            <AiOutlinePlayCircle className="Icons" />
-            <span style={{ cursor: "pointer" }}> whatch video </span>
+            <SocialIcon link='https://www.youtube.com/watch?v=KoknqliXxGQ'>
+              <AiOutlinePlayCircle className="Icons" />
+            </SocialIcon>
+            <a className="shoes-video" href="https://www.youtube.com/watch?v=KoknqliXxGQ" target='_blank'  > whatch video </a>
           </div>
         </Col>
         <Col xs={12} md={4} className="d-flex justify-content-end align-items-center">
@@ -40,6 +41,6 @@ export default function Footer() {
           </div>
         </Col>
       </Row>
-    </Container>
+    </Container >
   );
 }
