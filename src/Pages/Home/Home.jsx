@@ -8,7 +8,7 @@ import { useContext, useState, useEffect } from "react";
 import CategoryContext from "../../Context/shoeContext.jsx";
 import Rating from '@mui/material/Rating';
 import StarIcon from '@mui/icons-material/Star';
-import Shopping from "../../Components/Shop/Shopping";
+
 
 export default function Home() {
 
@@ -25,7 +25,7 @@ export default function Home() {
 
   return (
     <div className="my-2">
-      <Shopping></Shopping>
+
       <Container fluid>
         <Row className="">
           <Col xs={12} md={6} className="order-2 order-lg-1">
@@ -56,7 +56,7 @@ export default function Home() {
               <ToastContainer position="bottom-end" className="p-5" >
                 <Toast bg='success' onClose={() => setShowToast(false)} show={showToast} delay={2000} autohide>
                   <Toast.Header>
-                    <Toast.Body >Shoes have been added to the cart</Toast.Body>
+                    <Toast.Body >Shoes have been added to shopping cart</Toast.Body>
                   </Toast.Header>
                 </Toast>
               </ToastContainer>

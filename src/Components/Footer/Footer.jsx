@@ -35,7 +35,7 @@ export default function Footer() {
           </div>
         </Col>
         <Col xs={12} md={4} className="d-flex justify-content-end align-items-center">
-          <div className="Number">
+          <div className="Number" >
             <h3>0{shoesDataTransfer.activeShoe + 1}</h3>
             <span>/0{shoesDataTransfer.shoesData.length}</span>
           </div>

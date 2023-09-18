@@ -7,6 +7,7 @@ import "./Navbar.css";
 import CategoryContext from "../../Context/shoeContext.jsx";
 import Sidebar from "../Sidebar/Sidebar.jsx";
 
+
 const allCategories = ['HOME', ...new Set(shoes.map(shoes => shoes.category))]
 export default function NavBar() {
 
@@ -37,7 +38,8 @@ export default function NavBar() {
                         ))}
 
                     </Nav>
-                    <Sidebar></Sidebar>
+                    <Sidebar />
+
                     <div className="d-flex ">
                         <Button className="bg-transparent d-flex justify-content-center align-items-center  rounded-circle  p-2 border-0 me-2" >
                             <BiShoppingBag className="fs-4 text-white" />
