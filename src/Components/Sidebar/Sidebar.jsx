@@ -23,7 +23,7 @@ export default function Sidebar() {
 
                     <Offcanvas.Title bsPrefix='title-container'>
                         <div className="title-head">
-                            <div className='container-img'>  <img src="public/Img/me.jpg" alt="" className='user-img' /> </div>
+                            <div className='container-img'>  <img src="/Img/me.jpg" alt="" className='user-img' /> </div>
                             <h5>erfaneton</h5>
                         </div>
                         <div className='email-h6'><h6>erfanshafiei.ea@gmail.com</h6></div>
